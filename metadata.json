@@ -1,0 +1,6 @@
+{
+  "name": "CarDaddy",
+  "description": "Smart System to track - Smart reminders for your next due service, automotive services, digital bill book, and vehicle management platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

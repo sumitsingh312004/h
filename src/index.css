@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+/* Subtle hover transitions for admin data table rows and interactive lists */
+tbody tr {
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   DAY MODE (Light Theme) Sophisticated Styling
+   Active by default (when html does not have .dark)
+   ========================================================================== */
+
+:root:not(.dark) {
+  color-scheme: light;
+}
+
+html:not(.dark) {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html:not(.dark) body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Root & Section Backgrounds in Day Mode */
+html:not(.dark) .bg-\[\#121212\],
+html:not(.dark) .bg-\[\#141414\],
+html:not(.dark) .bg-\[\#161616\] {
+  background-color: #f8fafc !important;
+}
+
+/* Primary Surface & Card Containers */
+html:not(.dark) .bg-\[\#181818\],
+html:not(.dark) .bg-\[\#1c1c1c\],
+html:not(.dark) .bg-neutral-900,
+html:not(.dark) .bg-neutral-900\/90,
+html:not(.dark) .bg-neutral-900\/80,
+html:not(.dark) .bg-neutral-900\/60,
+html:not(.dark) .bg-neutral-900\/50 {
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.04), 0 1px 2px -1px rgb(0 0 0 / 0.04);
+}
+
+/* Secondary Surface, Inactive Pills & Neutral Badges */
+html:not(.dark) .bg-neutral-800,
+html:not(.dark) .bg-neutral-800\/80,
+html:not(.dark) .bg-neutral-800\/60,
+html:not(.dark) .bg-neutral-800\/50,
+html:not(.dark) .bg-neutral-800\/40 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Borders in Day Mode */
+html:not(.dark) .border-neutral-800,
+html:not(.dark) .border-neutral-800\/80,
+html:not(.dark) .border-neutral-700,
+html:not(.dark) .border-neutral-700\/80,
+html:not(.dark) .border-neutral-700\/60 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Text Hierarchy in Day Mode */
+html:not(.dark) h1:not([class*="text-[#"]):not([class*="text-red-"]):not([class*="text-sky-"]):not([class*="text-emerald-"]),
+html:not(.dark) h2:not([class*="text-[#"]):not([class*="text-red-"]):not([class*="text-sky-"]):not([class*="text-emerald-"]),
+html:not(.dark) h3:not([class*="text-[#"]):not([class*="text-red-"]):not([class*="text-sky-"]):not([class*="text-emerald-"]),
+html:not(.dark) h4:not([class*="text-[#"]):not([class*="text-red-"]):not([class*="text-sky-"]):not([class*="text-emerald-"]) {
+  color: #0f172a !important;
+}
+
+/* General Text Adjustments in Day Mode */
+html:not(.dark) p.text-white,
+html:not(.dark) p.text-neutral-100,
+html:not(.dark) p.text-neutral-200,
+html:not(.dark) div.text-white:not([class*="bg-\[\#198cd6\]"]):not([class*="bg-\[\#76bc21\]"]):not([class*="bg-red-"]):not([class*="bg-emerald-"]),
+html:not(.dark) span.text-white:not([class*="bg-\[\#198cd6\]"]):not([class*="bg-\[\#76bc21\]"]):not([class*="bg-red-"]):not([class*="bg-emerald-"]) {
+  color: #0f172a;
+}
+
+/* Secondary & Muted Text */
+html:not(.dark) .text-neutral-400,
+html:not(.dark) .text-neutral-500 {
+  color: #64748b !important;
+}
+
+html:not(.dark) .text-neutral-300 {
+  color: #334155 !important;
+}
+
+/* Form Controls & Inputs in Day Mode */
+html:not(.dark) input:not([type="checkbox"]):not([type="radio"]),
+html:not(.dark) select,
+html:not(.dark) textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html:not(.dark) input::placeholder,
+html:not(.dark) textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Preserve White Text on Solid Accent Buttons */
+html:not(.dark) button.bg-\[\#198cd6\],
+html:not(.dark) button.bg-\[\#76bc21\],
+html:not(.dark) button.bg-red-600,
+html:not(.dark) button.bg-red-600\/90,
+html:not(.dark) button.bg-emerald-600,
+html:not(.dark) .bg-\[\#198cd6\] span,
+html:not(.dark) .bg-\[\#76bc21\] span,
+html:not(.dark) .bg-red-600 span,
+html:not(.dark) .bg-emerald-600 span,
+html:not(.dark) button.bg-\[\#198cd6\] *,
+html:not(.dark) button.bg-\[\#76bc21\] *,
+html:not(.dark) button.bg-red-600 *,
+html:not(.dark) .bg-red-600\/90 * {
+  color: #ffffff !important;
+}
+
+/* Neutral Buttons in Day Mode */
+html:not(.dark) button.bg-neutral-800,
+html:not(.dark) button.bg-neutral-900 {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html:not(.dark) button.bg-neutral-800:hover,
+html:not(.dark) button.bg-neutral-900:hover {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+/* Tables in Day Mode */
+html:not(.dark) table thead {
+  background-color: #f1f5f9 !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+html:not(.dark) table thead th {
+  color: #475569 !important;
+}
+
+html:not(.dark) table tbody tr {
+  border-bottom: 1px solid #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+html:not(.dark) table tbody tr:hover {
+  background-color: #f8fafc !important;
+}
+
+
